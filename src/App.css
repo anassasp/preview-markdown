@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+blockquote {
+  border-left: 3px solid #000;
+  padding-left: 5px;
+  margin-left: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+code, pre {
+  background-color: #fff;
+}
+
+table, th, td {
+  border: 2px solid #224b4b;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+.wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  margin: 20px 0 0 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.container {
+  margin: 50px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container.editor {
+  width: 50%;
+}
+
+.container.preview {
+  width: 90%;
+}
+
+.menubar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #023e8a;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.menubar p {
+  margin: 5px 0;
+}
+
+.text {
+  overflow-y: auto;
+  border: 1px solid #000;
+  padding: 10px;
+  background-color: #ade8f4;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.editor.text {
+  height: 40vh;
+}
+
+.preview.text {
+  overflow-x: auto;
+  height: 120vh;
+}
+
+
+
+@media (max-width: 690px) {
+  .container.editor {
+    width: 90%;
   }
 }
