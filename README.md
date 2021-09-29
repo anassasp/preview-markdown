@@ -3,10 +3,10 @@
 ## About
 just preview markdown app that is simillar to github readme syntax
 
-> Stack tech:
-* HTML & CSS + React JS
+* Stack tech:
+  1. HTML & CSS + React JS
 
-> Package:
-* [Marked](https://www.npmjs.com/package/marked)
+* Package:
+  * [Marked](https://www.npmjs.com/package/marked)
 
 > [Link to web preview](https://anassasp.github.io/preview-markdown/)
